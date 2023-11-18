@@ -37,18 +37,47 @@ class Hero {
 
     /**
      * Buat fungsi untuk lari, makan, minum, lompat, dan duduk. Masing2 memiliki kriteria sebagai berikut:
-     - pasang fungsi checkHealth() di dalam fungsi yang akan dibuat
-     - Tampilkan text kegiatan yang sedang dilakukan, misal, jika lari: "$name sedang berlari..."
-     - ubah nilai variable health sesuai kegiatan yang dilakukan:
-      * lari = -2
-      * makan = +2
-      * minum = +2
-      * lompat = -2
-      * duduk = +1
+    - pasang fungsi checkHealth() di dalam fungsi yang akan dibuat
+    - Tampilkan text kegiatan yang sedang dilakukan, misal, jika lari: "$name sedang berlari..."
+    - ubah nilai variable health sesuai kegiatan yang dilakukan:
+     * lari = -2
+     * makan = +2
+     * minum = +2
+     * lompat = -2
+     * duduk = +1
 
-      Contoh fungsi bisa mengikuti fungsi jalan() diatas.
+    Contoh fungsi bisa mengikuti fungsi jalan() diatas.
+     */
 
-    */
-    
+    fun lari() {
+        checkHealth()
+        println("$name sedang berlari...")
+        health -= 2
+    }
+
+    fun makan() {
+        checkHealth()
+        println("$name sedang makan...")
+        health += 2
+    }
+
+    fun minum() {
+        checkHealth()
+        println("$name sedang minum...")
+        health += 2
+    }
+
+    fun lompat() {
+        checkHealth()
+        println("$name sedang lompat...")
+        health -= 2
+    }
+
+    fun duduk() {
+        checkHealth()
+        println("$name sedang duduk...")
+        health += 1
+    }
+
 }
 

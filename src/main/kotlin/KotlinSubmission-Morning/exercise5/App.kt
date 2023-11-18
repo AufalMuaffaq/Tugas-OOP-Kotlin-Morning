@@ -8,6 +8,7 @@ fun main() {
      *
      */
 
+    val hero = Hero()
 
     /**
      * Latihan 2
@@ -15,6 +16,7 @@ fun main() {
      * Dan isi argumen-argumen / data dari parameter sesuai data diri Anda (Name, Age, Height)
      *
      */
+    hero.setProfile("aufal",23,170)
 
 
 
@@ -23,7 +25,7 @@ fun main() {
      * Tampilkan data profile dibawah ini, sebelum melakukan aktivitas
      *
      */
-
+    hero.profile()
 
 
     /**
@@ -58,22 +60,33 @@ fun main() {
     Project Nusantara -> jalan 4x, lari 1x, makan 3x, minum 5x, lompat 5x, duduk 3x
     Orion -> jalan 5x, lari 4x, makan 4x, minum 4x, lompat 3x, duduk 2x
     Freiwilliger -> jalan 2x, lari 2x, makan 1x, minum 3x, lompat 1x, duduk 2x
-    **/
+     **/
 
     /**
      * Latihan 4
      * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
      *
      */
-
-
-
+    hero.jalan()
+    hero.jalan()
+    hero.jalan()
+    hero.jalan()
+    hero.jalan()
+    hero.lari()
+    hero.lari()
+    hero.lari()
+    hero.makan()
+    hero.minum()
+    hero.minum()
+    hero.lompat()
+    hero.lompat()
+    hero.lompat()
+    hero.duduk()
+    hero.duduk()
     /**
      * Latihan 5
      * Panggil fungsi profile dibawah ini untuk menampilkan status terkini setelah melakukan aktivitas
      *
      */
-
-
-
+    hero.profile()
 }

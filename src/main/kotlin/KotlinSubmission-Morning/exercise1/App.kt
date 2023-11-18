@@ -10,7 +10,15 @@ Lengkapi fungsi myProfile di bawah ini dengan membuat variabel dengan ketentuan 
 Dan Cetak setiap variabel ke layar saat variable myProfile di panggil
  */
 fun myProfile() {
+    val namadepan: String = "Aufal"
+    val namabelakang: String = "Muaffaq"
+    val umur: Number = 23
+    val status: Boolean = true
 
+    println("Nama Depan: $namadepan")
+    println("Nama Belakang: $namabelakang")
+    println("Umur: $umur")
+    println("Single: $status")
 }
 
 
@@ -19,6 +27,11 @@ fun myProfile() {
  *  Lengkapi fungsi di bawah ini agar dapat mencetak nilai dari parameter-parameter yang ada dengan fungsi println
  */
 fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
+    println(groupId)
+    groupMember.forEach {
+        println(it)
+    }
+    println(session)
     return ""
 }
 
@@ -28,9 +41,16 @@ fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
  * Kemudian akses item yang berisi nama Anda dari variable tersebut, lalu jadikan nilai kembalian untuk fungsi myTeam ini
  *
  */
-fun myTeam(): List<Any> {
 
-    return listOf()
+fun myTeam(): List<String> {
+    var group: List<String> = listOf(
+        "Aufal", "fahri", "irma","fadli","ihsan", "alif","farhan","alif","raka","fikri"
+    )
+
+    val namaSaya = group.get(0)
+    println("nama saya: $namaSaya")
+
+    return group
 }
 
 /**
@@ -41,16 +61,17 @@ fun myTeam(): List<Any> {
  *
  */
 fun totalMember(): Int {
-    val mentor = arrayOf<String>()
-    val countOfGroup = arrayOf<String>()
+    val mentor = arrayOf<String>("Kak Megy", "Kak Syarif")
+    val countOfGroup = arrayOf<String>(
+        "aufal", "fahri", "irma","fadli","ihsan", "alif","farhan","alif","raka","fikri"
+    )
 
-    return 0
+    return mentor.size + countOfGroup.size
 }
 
 fun main() {
 
     myProfile()
-
     val myTeam = myTeam()
     println("My team is: $myTeam")
 
@@ -62,6 +83,6 @@ fun main() {
      *  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu
      *
      */
-    groupDetail("", listOf(), "")
+    groupDetail("Baldwin", myTeam(), "morning")
 
 }

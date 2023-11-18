@@ -17,4 +17,16 @@ fun main() {
      */
     // Buat di bawah sini
 
+    val nilaiscore = 80
+    lateinit var result : String
+    when{
+        nilaiscore >=  90 -> result = "Selamat! Anda mendapatkan nilai A"
+        nilaiscore >= 80  -> result = "Selamat! Anda mendapatkan nilai B"
+        nilaiscore >=  70 -> result = "Selamat! Anda mendapatkan nilai C"
+        nilaiscore >=  60 -> result = "Selamat! Anda mendapatkan nilai D"
+        else -> result = "Anda mendapatkan nilai E"
+    }
+
+    println(result)
+
 }
